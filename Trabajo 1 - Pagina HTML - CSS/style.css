@@ -45,11 +45,13 @@
   flex-grow: 1;
   margin: 10px;
   border-radius: 18px;
-  /* display: flex;
+  /* Para que el texto se centre dentro de cada hijo. */
+  display: flex;
   align-items: center;
-  justify-content: center; */
+  justify-content: center;
 }
 
 .diff {
+  /* Para que crezcan dos hijos y se asemeje al ejemplo presentado */
   flex-grow: 2;
 }
