@@ -47,7 +47,7 @@ console.log(fxs.resta(8,7))
 
 // Impura
 let c = 0;
-function suma(num) {
+function suma2(num) {
     c += num;
     return c;
 }
@@ -79,7 +79,7 @@ persona.edad = "24" // Felíz cumpleaños!
 
 console.log(persona);
 
-let persona = Object.freeze({
+let persona2 = Object.freeze({
     nombre: "Juana",
     edad: "23"
 })
@@ -102,4 +102,47 @@ funcionf()
 const sumar = (a,b) => { return a+b; }
 console.log(sumar(5,9))
 
-// Pausa - Declarativa-Imperativa (01:17:42)
+// Declarativa-Imperativa
+
+// Programación imperativa: Paradigma para realizar una tarea paso a paso.
+
+nums = [1, 2, 3, 4, 5, 6];
+
+// Sacar el cuadrado de estos números
+let square = []
+
+for (let i = 0; i < nums.length; i++) {
+    square.push(nums[i]*nums[i])
+}
+console.log(square)
+
+
+//  Programación declarativa: Centrada en describir de qué lograr, sin describir los pasos en sí.
+
+console.log(nums.map(num => num*num))
+
+// Método filter
+// Listar SOLO los números pares
+const pares = nums.filter(num => num % 2 === 0)
+// Esta toma una función como entrada, que se puede definir dentro de los parentesis como función flecha
+console.log(pares)
+
+// Reduce : Devuelve un único valor como resultado
+
+const sumatoria = nums.reduce((acc, curr) => acc+curr,0)
+
+// La función toma dos argumentos y acumula los elementos
+console.log(sumatoria)
+
+// foreach : Iteera por un arreglo y hace algo con esos datos.
+
+nums.forEach(function(n,i){
+    console.log(`Número ${n} en la posición ${i}`)
+})
+
+// find : busca la posición en un elemento.
+
+console.log(nums.find(n => n === 3)) // El elemento es
+
+// some : devuelve un booleano de si lo encontró o no.
+console.log(nums.some(n => n === 3)) 
