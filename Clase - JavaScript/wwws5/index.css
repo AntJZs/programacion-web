@@ -1,0 +1,15 @@
+.response {
+  background-color: beige;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+.response-info {
+  background-color: antiquewhite;
+  border-radius: 12px;
+  width: max-content;
+  height: 300px;
+  margin: 12px;
+}

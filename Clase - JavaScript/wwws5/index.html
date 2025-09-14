@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UN DOC PAL DOM</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../script-n5.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Busca tu error HTTP!</h1>
+      <p>Escribe el código en el area de texto de abajo para ver la descripción del error</p>
+      <input type="number" name="input_code" id="num" />
+      <button type="button" onclick="getInputValue()">Consultar</button>
+    </div>
+    <div class="response">
+      <h2>Resultado</h2>
+      <div class="response-info"></div>
+    </div>
+  </body>
+</html>
